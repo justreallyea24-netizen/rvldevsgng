@@ -1,0 +1,362 @@
+/* style.css */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: white;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    font-size: 25px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+.footer-links,
+.contact-links {
+    margin: 20px 0;
+}
+
+.footer-links a,
+.contact-links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+.wa{
+    background: black;
+   width: 6rem;
+   border-radius: 6px ;
+}
+/* NAVBAR */
+.start-btn {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  background: #08009b;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 7%;
+
+  box-shadow: 0 2px 8px #0002;
+}
+.instructions{
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+.instruction-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.instructions h2 {
+    color: darkblue;
+    font-size: 30px;
+}
+.brand {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+.instruction {
+    background-color: #f2f6ff;
+    padding: 20px;
+    width: 200px;
+}
+.instruction h3 {
+    color: darkblue;
+    font-size: 20px;
+}
+
+.instruction p {
+    font-size: 16px;
+}
+.brand span {
+  display: inline-flex;
+
+  background: #05005e;
+
+  border-radius: 5px;
+
+  padding: 5px 7px;
+
+  margin-right: 7px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 520px;
+
+  background: #bceff4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 50px 20px;
+}
+
+.hero-card h1 {
+  color: #111a8f;
+
+  font-size: 42px;
+
+  line-height: 1.05;
+
+  margin: 0 0 18px;
+}
+
+.hero-card p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+
+/* BUTTON */
+
+.btn {
+  display: inline-block;
+
+  border: 0;
+  border-radius: 5px;
+
+  background: #08009b;
+  color: white;
+
+  text-decoration: none;
+
+  padding: 11px 20px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #05006b;
+}
+
+
+/* SECTIONS */
+
+.section {
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 55px 20px;
+}
+
+
+/* ABOUT */
+
+.about {
+  text-align: center;
+}
+
+.about h2,
+.exam h2 {
+  color: #08009b;
+}
+
+.about p {
+  max-width: 650px;
+
+  margin: 10px auto;
+
+  line-height: 1.6;
+}
+
+
+/* FEATURES */
+
+.features {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.feature-card {
+  border: 2px dotted #999;
+
+  padding: 28px 20px;
+
+  text-align: center;
+
+  min-height: 150px;
+}
+
+.feature-card h2 {
+  color: #08009b;
+
+  margin-top: 0;
+}
+
+
+/* EXAM */
+
+.exam {
+  background: white;
+}
+
+.exam h2 {
+  text-align: left;
+
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  margin-top: 0;
+}
+
+.question {
+  border-bottom: 1px solid #ddd;
+
+  padding: 18px 0;
+}
+
+.question p {
+  margin: 0 0 12px;
+
+  font-weight: 500;
+}
+
+.question label {
+  display: block;
+
+  margin: 8px 0;
+}
+
+select {
+  padding: 4px 8px;
+
+  font-size: 14px;
+}
+
+.submit {
+  margin-top: 25px;
+}
+
+
+/* RESULT */
+
+.result {
+  margin-top: 22px;
+
+  padding: 18px;
+
+  border-radius: 8px;
+
+  background: #eaf7ff;
+
+  border: 1px solid #8ac8e8;
+
+  font-weight: 700;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: #08009b;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 22px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+  .navbar {
+    align-items: flex-start;
+
+    gap: 12px;
+
+    flex-direction: column;
+
+    padding: 12px 18px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  .hero {
+    min-height: 430px;
+  }
+
+  .hero-card h1 {
+    font-size: 32px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 40px 16px;
+  }
+}
